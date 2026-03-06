@@ -1,0 +1,138 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.card {
+    border:none;
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.hero {
+    height: 90vh;
+    background: linear-gradient(135deg, #87AFEB, #236DA6);
+    color: white;
+}
+
+.hero .container {
+    max-width: 700px;
+}
+
+.btn-gradient {
+    background: linear-gradient(45deg, #538CED, #8CBCEB);
+    border: none;
+    color:white;
+    padding: 12px 28px;
+    border-radius: 30px;
+    transition: 0.3s ease;
+}
+
+.btn-gradient:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+
+}
+
+section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.btn-gradient {
+    background: linear-gradient(45deg, #538CED, #8CBCEB);
+    border-radius: 12px;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.btn-gradient:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+/* Responsive adjustments */
+#about h2 {
+    font-weight: 700;
+}
+
+#about p.lead {
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+/*Img shadow & hover lift*/
+#about img {
+    transition: all 0.3s ease;
+}
+
+#about img:hover {
+    transform: translateY(-5px) scale(1.02);
+    
+}
+
+#about h2 {
+        font-size: 1.8rem;
+    }
+
+    #about p.lead {
+        font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .hero .display-3 {
+        font-size: 2.5rem;
+}
+ 
+@media (max-width: 768px) {
+    #about img {
+        margin-bottom: 2rem;
+    }
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+#topBtn {
+    position: fixed;
+    bottom: clamp(15px, 4vw, 30px);
+    right: clamp(15px, 4vw, 30px);
+    z-index: 99;
+    border: none;
+    outline: none;
+    background: linear-gradient(45deg, #538CED, #8CBCEB);
+    color: white;
+    cursor: pointer;
+    padding: clamp(8px, 2vw, 12px) clamp(10px, 2.5vw, 16px);
+    border-radius: 50%;
+    font-size: clamp(14px, 2vw, 18px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+#topBtn.show {
+    opacity:1;
+    visibility: visible;
+}
+
+#topBtn:hover {
+    transform: translateY(-5px)
+}
